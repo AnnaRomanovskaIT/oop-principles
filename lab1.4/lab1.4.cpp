@@ -9,7 +9,7 @@ int main()
     string name_prod;
     cout << "n is ";
     cin >> n;
-    skald* shop = new skald[n];
+    storage* shop = new storage[n];
     set(shop, n);
     cout << "  sorting... " << endl;
     sort(shop, n);
