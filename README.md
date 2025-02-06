@@ -41,3 +41,29 @@ This project is divided into three files to maintain a modular structure:
 `mod_lab12.h` → The header file that declares function prototypes.
 
 `Source.cpp` → Implements all the functions declared in the header.
+______
+# Lab1.3
+
+`Lab1.3` involves a C++ `class sentence` that is used to manipulate strings based on certain conditions. 
+
+The class contains methods to:
+
+- Tokenize a string into words using specified delimiters.
+- Find twin words (words with an even length).
+- Swap characters in the words (swap the first and last character).
+
+<h3>Class Definition</h3>
+
+The `sentence class` has a vector of strings called main, which stores the words from a given input string. The class has the following methods:
+
+Constructor `sentence()`: Initializes an empty sentence object.
+
+Parameterized Constructor `sentence(string s, string symb, string ano_symb)`: Takes an input string and two delimiter strings. It tokenizes the input string by removing occurrences of a specified symbol (ano_symb) and splitting the string based on the other symbol (symb).
+
+`print()`: Prints all the words stored in the main vector.
+
+`twin()`: Returns a vector of strings containing only the words with an even number of characters.
+
+`swap()`: Swaps the first and last character of each word stored in main and returns the modified vector of words.
+
+Project Structure the same as previous one.
