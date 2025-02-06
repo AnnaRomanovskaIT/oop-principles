@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 using namespace std;
 
-struct skald {
+struct storage {
 
     string name;
     string type;
@@ -26,7 +26,7 @@ struct skald {
     }
 };
 
-void set_get(skald* shop, int n)
+void set_get(storage* shop, int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -38,7 +38,7 @@ void set_get(skald* shop, int n)
     }
 }
 
-void sort(skald* shop, int n)
+void sort(storage* shop, int n)
 {
     string swap_c;
     int swap_n = 0;
@@ -71,7 +71,7 @@ int main()
     int n, a;
     cout << "n is ";
     cin >> n;
-    skald* shop = new skald[n];
+    storage* shop = new storage[n];
     set_get(shop, n);
     cout << "wanna sort it? (0 - no, 1 - yes) " << endl;
     cin >> a;
