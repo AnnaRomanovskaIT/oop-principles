@@ -40,30 +40,22 @@ void set_get(storage* shop, int n)
 
 void sort(storage* shop, int n)
 {
-    string swap_c;
-    int swap_n = 0;
+    storage temp;  // Temporary variable to hold values during swap
     for (int i = 0; i < n - 1; i++)
     {
-        if (shop[i].name < shop[i + 1].name)
+        for (int j = i + 1; j < n; j++)
         {
-            shop[i].name= swap_c;
-            shop[i].name = shop[i + 1].name;
-            shop[i + 1].name = swap_c;
-
-            shop[i].type = swap_c;
-            shop[i].type = shop[i + 1].type;
-            shop[i + 1].type = swap_c;
-
-            shop[i].quantity = swap_n;
-            shop[i].quantity = shop[i + 1].quantity;
-            shop[i + 1].quantity = swap_n;
-
-            shop[i].cost = swap_n;
-            shop[i].cost = shop[i + 1].cost;
-            shop[i + 1].cost = swap_n;
+            if (shop[i].name < shop[j].name)
+            {
+                // Swap using temp
+                temp = shop[i];
+                shop[i] = shop[j];
+                shop[j] = temp;
+            }
         }
     }
 }
+
 
 
 int main()
