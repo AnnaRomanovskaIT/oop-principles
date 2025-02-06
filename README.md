@@ -66,4 +66,40 @@ Parameterized Constructor `sentence(string s, string symb, string ano_symb)`: Ta
 
 `swap()`: Swaps the first and last character of each word stored in main and returns the modified vector of words.
 
-Project Structure the same as previous one.
+<h3>Project Structure Description</h3>
+
+This project is divided into three files to maintain a modular structure:
+
+`lab1.3.cpp` → Contains the main() function.
+
+`mod_lab13.h` → The header file that declares function prototypes.
+
+`Source.cpp` → Implements all the functions declared in the header.
+______
+# Lab1.4
+
+`lab1.4` manages a list of products in a shop, allowing users to input product details, print the information, and sort the products alphabetically by name. 
+
+The program uses a structure (`storage`) to store product information and provides functions for input, output, and sorting.
+
+<h3>storage Structure</h3>
+
+The skald structure holds information about a product, including:
+
+- name: The name of the product.
+
+- type: The type/category of the product.
+
+- quantity: The quantity of the product in stock.
+
+- cost: The cost of the product.
+
+It also includes the following member functions:
+
+`input()`: Prompts the user to input the product details and stores them in the respective fields of the skald structure.
+
+`print()`: Prints the details of the product in a formatted way.
+
+`set_get()`: Function is used to input and print the information for all products in the shop.
+
+`sort()`: Sorts the products in the shop array based on their names in descending order (alphabetically).
