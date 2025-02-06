@@ -103,3 +103,13 @@ It also includes the following member functions:
 `set_get()`: Function is used to input and print the information for all products in the shop.
 
 `sort()`: Sorts the products in the shop array based on their names in descending order (alphabetically).
+
+<h3>Project Structure Description</h3>
+
+This project is divided into three files to maintain a modular structure:
+
+`lab1.4.cpp` → Contains the main() function.
+
+`mod_lab14.h` → The header file that declares function prototypes.
+
+`Source.cpp` → Implements all the functions declared in the header.
