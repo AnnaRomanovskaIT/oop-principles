@@ -24,7 +24,7 @@ int count(string line)
 }
 
 
-rech::rech(string s, string symb, string ano_symb) {
+sentence::sentence(string s, string symb, string ano_symb) {
 	string words;
 	int a = 0, b, symb_len = symb.length(), ano_symb_len = ano_symb.length();
 	vector <string> result;
@@ -42,7 +42,7 @@ rech::rech(string s, string symb, string ano_symb) {
 	main = result;
 }
 
-void rech::print()
+void sentence::print()
 {
 	int n = main.size();
 	cout << endl;
@@ -52,7 +52,7 @@ void rech::print()
 	}
 }
 
-vector <string> rech::twin()
+vector <string> sentence::twin()
 {
 	vector <string> t;
 	int n = main.size();
@@ -66,7 +66,7 @@ vector <string> rech::twin()
 	return t;
 }
 
-vector <string> rech::swap()
+vector <string> sentence::swap()
 {
 	int n = main.size();
 	char swap_s;
