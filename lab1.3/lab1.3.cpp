@@ -13,7 +13,7 @@ int main()
     cout << "please, enter the line: ";
     getline(cin, line);
 	cout << "number of punctuation marks "<<count(line);
-	rech mas(line, symb, ano_symb);
+	sentence mas(line, symb, ano_symb);
 	cout << endl<<"paired words:";
 	t = mas.twin();
 
