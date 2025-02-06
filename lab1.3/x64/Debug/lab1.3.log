@@ -1,0 +1,14 @@
+﻿  Source.cpp
+D:\c++\lab oop\lab1.3\Source.cpp(12,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\lab oop\lab1.3\Source.cpp(12,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\lab oop\lab1.3\Source.cpp(29,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\lab oop\lab1.3\Source.cpp(29,74): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\lab oop\lab1.3\Source.cpp(31,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\lab oop\lab1.3\Source.cpp(35,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\lab oop\lab1.3\Source.cpp(47,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\lab oop\lab1.3\Source.cpp(58,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\c++\lab oop\lab1.3\Source.cpp(71,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  lab1.3.cpp
+D:\c++\lab oop\lab1.3\lab1.3.cpp(20,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  lab1.3.vcxproj -> D:\c++\lab oop\lab1.3\x64\Debug\lab1.3.exe
