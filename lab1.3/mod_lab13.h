@@ -4,12 +4,12 @@
 using std::string;
 using std::vector;
 
-class rech
+class sentence
 {
 	vector <string> main;
 public:
-	rech() {};
-	rech(string s, string symb, string ano_symb);
+	sentence() {};
+	sentence(string s, string symb, string ano_symb);
 	void print();
 	vector <string> twin();
 	vector <string> swap();
