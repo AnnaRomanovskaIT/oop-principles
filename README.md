@@ -21,3 +21,23 @@ This project is divided into three files to maintain a modular structure:
 `mod_lab11.h` → The header file that declares function prototypes.
 
 `func1.1.cpp` → Implements all the functions declared in the header.
+_____
+# Lab1.2
+
+`lab1.2` working with a dynamically allocated 2D array (matrix). 
+
+The main operations include:
+
+- Matrix Creation with random values.
+- Summing positive values in each column and storing these sums in a new array.
+- Finding the minimum sum of absolute values along the diagonals of the matrix.
+
+<h3>Project Structure Description</h3>
+
+This project is divided into three files to maintain a modular structure:
+
+`lab1.2.cpp` → Contains the main() function.
+
+`mod_lab12.h` → The header file that declares function prototypes.
+
+`Source.cpp` → Implements all the functions declared in the header.
