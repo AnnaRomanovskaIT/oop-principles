@@ -1,5 +1,5 @@
 #pragma once
-struct skald {
+struct storage {
 
     string name;
     string type;
@@ -26,7 +26,7 @@ struct skald {
         cout << endl;
     }
 };
-void set(skald* shop, int n);
-void get(skald* shop, int n);
-void sort(skald* shop, int n);
-void if_there_is_it(skald* shop, string a, int n);
+void set(storage* shop, int n);
+void get(storage* shop, int n);
+void sort(storage* shop, int n);
+void if_there_is_it(storage* shop, string a, int n);
