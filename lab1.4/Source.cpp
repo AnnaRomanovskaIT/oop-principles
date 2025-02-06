@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-struct skald {
+struct storage {
 
     string name;
     string type;
@@ -29,7 +29,7 @@ struct skald {
     }
 };
 
-void set(skald* shop, int n)
+void set(storage* shop, int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -37,7 +37,7 @@ void set(skald* shop, int n)
     }
 }
 
-void get(skald* shop, int n)
+void get(storage* shop, int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -45,7 +45,7 @@ void get(skald* shop, int n)
     }
 }
 
-void sort(skald* shop, int n)
+void sort(storage* shop, int n)
 {
     string swap_c;
     int swap_n = 0;
@@ -75,7 +75,7 @@ void sort(skald* shop, int n)
     }
 }
 
-void if_there_is_it(skald* shop, string a, int n)
+void if_there_is_it(storage* shop, string a, int n)
 {
     int v = 0;
     for (int i = 0; i < n; i++)
