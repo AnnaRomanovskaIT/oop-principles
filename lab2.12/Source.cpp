@@ -1,38 +1,28 @@
-#include <iostream>
-#include < iomanip >
 #include "Person_class.h"
-using namespace std;
 
-Person::Person(string nazwisko, string proffesion, string adress, int old, int phone)
+Person::Person() : m_lastName("Unknown"), m_profession("None"), m_address("Unknown"), m_age(0), m_phone("0000000000") {}
+
+Person::Person(string lastName, string profession, string address, int age, string phone)
 {
-    setAll(nazwisko, proffesion, adress, old, phone);
-};
-void Person::setAll(string nazwisko, string proffesion, string adress, int old, int phone)
+    setAll(lastName, profession, address, age, phone);
+}
+
+void Person::setAll(string lastName, string profession, string address, int age, string phone)
 {
-    m_nazwisko = nazwisko;
-    m_proffesion = proffesion;
-    m_adress = adress;
-    m_old = old;
+    m_lastName = lastName;
+    m_profession = profession;
+    m_address = address;
+    m_age = age;
     m_phone = phone;
-};
-void Person::print()
+}
+
+void Person::print() const
 {
     cout << "==================================" << endl;
-    //34
-    cout << "| " << m_nazwisko;
-    cout.width(34 - (m_nazwisko.length() + 2));
-    cout << "|" << endl;
-    cout << "| " << "years: " << m_old;
-    cout.width(34 - 4 - 7);
-    cout << "|" << endl;
-    cout << "| " << "proffesion: " << m_proffesion;
-    cout.width(34 - (m_proffesion.length() + 14));
-    cout << "|" << endl;
-    cout << "| " << "adress: " << m_adress;
-    cout.width(34 - (m_adress.length() + 10));
-    cout << "|" << endl;
-    cout << "| " << m_phone;
-    cout.width(34 - 10);
-    cout << "|" << endl;
+    cout << "| " << left << setw(30) << m_lastName << " |" << endl;
+    cout << "| " << left << setw(30) << ("Age: " + to_string(m_age)) << " |" << endl;
+    cout << "| " << left << setw(30) << ("Profession: " + m_profession) << " |" << endl;
+    cout << "| " << left << setw(30) << ("Address: " + m_address) << " |" << endl;
+    cout << "| " << left << setw(30) << ("Phone: " + m_phone) << " |" << endl;
     cout << "==================================" << endl;
-};
+}
