@@ -1,14 +1,19 @@
 #pragma once
 #include <iostream>
+#include <iomanip>  // For formatting output
 using namespace std;
 
 class Person
 {
-    string m_nazwisko, m_proffesion, m_adress;
-    int m_old, m_phone;
+private:
+    string m_lastName, m_profession, m_address, m_phone;
+    int m_age;
+
 public:
-    Person() {};
-    Person(string nazwisko, string proffesion, string adress, int old, int phone);
-    void setAll(string nazwisko, string proffesion, string adress, int old, int phone);
-    void print();
+    Person();  
+    Person(string lastName, string profession, string address, int age, string phone);
+
+    void setAll(string lastName, string profession, string address, int age, string phone);
+
+    void print() const;
 };
