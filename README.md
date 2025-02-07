@@ -116,7 +116,7 @@ This project is divided into three files to maintain a modular structure:
 ____
 # Lab2.11
 
-`lab2.11` defines a Product class that represents a food product with attributes such as name, weight, energy value, and macronutrient content. The class provides functionalities to initialize, modify, display, and sum up the energy values of multiple products.
+`lab2.11` defines a `Product class` that represents a food product with attributes such as name, weight, energy value, and macronutrient content. The class provides functionalities to initialize, modify, display, and sum up the energy values of multiple products.
 
 <h3>Class Structure</h3>
 
@@ -150,3 +150,27 @@ This project is divided into three files to maintain a modular structure:
 `mod_lab21.h` → The header file that declares function prototypes.
 
 `Source.cpp` → Implements all the functions declared in the header.
+______
+# Lab2.12
+
+`lab2.12` defines a `Person class` that models a person’s basic details such as name, profession, address, age, and phone number.
+
+<h3>Class Structure</h3>
+
+Private Data Members:
+
+- m_lastName → Stores the person’s last name.
+- m_profession → Stores their profession.
+- m_address → Stores their address.
+- m_phone → Stores their phone number (as a string to preserve leading zeros).
+- m_age → Stores their age.
+
+Public Member Functions:
+
+`Person()` → Default constructor initializes attributes with default values.
+
+`Person(string lastName, string profession, string address, int age, string phone)` → Parameterized constructor to initialize all attributes.
+
+`void setAll(string lastName, string profession, string address, int age, string phone)` → Setter function to assign values.
+
+`void print() const` → Prints the person's information in a formatted table.
