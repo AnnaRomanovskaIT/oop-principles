@@ -113,3 +113,40 @@ This project is divided into three files to maintain a modular structure:
 `mod_lab14.h` → The header file that declares function prototypes.
 
 `Source.cpp` → Implements all the functions declared in the header.
+____
+# Lab2.11
+
+`lab2.11` defines a Product class that represents a food product with attributes such as name, weight, energy value, and macronutrient content. The class provides functionalities to initialize, modify, display, and sum up the energy values of multiple products.
+
+<h3>Class Structure</h3>
+
+Attributes:
+
+- m_name: Product name.
+- m_weight: Weight of the product.
+- m_energy: Energy content (calories).
+- m_bilok: Protein content per 100g.
+- m_jyry: Fat content per 100g.
+- m_wuglewody: Carbohydrate content per 100g.
+  
+Methods:
+
+`Product()`; → Default constructor.
+
+`Product(...)` → Parameterized constructor.
+
+`setAll(...)` → Sets all attributes.
+
+`print()`; → Displays product details.
+
+`energy_summar(Product* a, int n)`; → Computes the sum of energy values for an array of Product objects.
+
+<h3>Project Structure Description</h3>
+
+This project is divided into three files to maintain a modular structure:
+
+`lab2.11.cpp` → Contains the main() function.
+
+`mod_lab21.h` → The header file that declares function prototypes.
+
+`Source.cpp` → Implements all the functions declared in the header.
