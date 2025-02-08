@@ -174,3 +174,51 @@ Public Member Functions:
 `void setAll(string lastName, string profession, string address, int age, string phone)` → Setter function to assign values.
 
 `void print() const` → Prints the person's information in a formatted table.
+
+<h3>Project Structure Description</h3>
+
+This project is divided into three files to maintain a modular structure:
+
+`lab2.12.cpp` → Contains the main() function.
+
+`Person_class.h` → The header file that declares function prototypes.
+
+`Source.cpp` → Implements all the functions declared in the header.
+_____
+# Lab2.14
+
+`lab2.14` defines a `paralelepiped class`, which represents a rectangular parallelepiped (a 3D box with six rectangular faces). It calculates:
+
+Side surface area (Sb) → Sum of the areas of the four lateral faces.
+
+Total surface area (Spp) → Sum of the areas of all six faces.
+
+<h3>Class Structure</h3> 
+
+Private attributes: `m_a`, `m_b`, `m_c` → The three dimensions of the parallelepiped.
+
+Public methods:
+
+`paralelepiped()` → Default constructor.
+
+`paralelepiped(int a, int b, int c)` → Parameterized constructor.
+
+`void setAll(int a, int b, int c)` → Sets all dimensions.
+
+`void Sb()` → Prints the side surface area.
+
+`int getSb()` → Calculates the side surface area.
+
+`void Spp()` → Prints the total surface area.
+
+`int getSpp()` → Calculates the total surface area.
+
+<h3>Project Structure Description</h3>
+
+This project is divided into three files to maintain a modular structure:
+
+`lab2.14.cpp` → Contains the main() function.
+
+`paralelepiped2_class.h` → The header file that declares function prototypes.
+
+`Source.cpp` → Implements all the functions declared in the header.
