@@ -260,3 +260,36 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 _____
+#Lab2.21
+
+`lab2.21` defines a `Stopwatch class` that is used to measure elapsed time in seconds (with minute-level precision). It utilizes the C++ chrono library for high-resolution time measurement.
+
+<h3>Class Definition</h3>
+
+Member Variables:
+
+`m_beg`: A time point representing the moment when the stopwatch was started. This variable is of type std::chrono::time_point, which records the current time when the stopwatch is started or reset.
+
+`clock_t`: This alias refers to std::chrono::high_resolution_clock, which is used for high-precision timing.
+
+`second_t`: This alias represents the duration of time in minutes. The std::chrono::duration is parameterized with double and a ratio of 60, so the time is recorded in minutes. 
+
+Methods:
+
+`Stopwatch()` The default constructor initializes the stopwatch by setting m_beg to the current time point when the object is created.
+
+`start()` This method resets the stopwatch by updating m_beg to the current time again. This allows the stopwatch to be started or restarted.
+
+`show()` This method calculates and displays the elapsed time in minutes (since second_t is using std::ratio<60>). It does this by subtracting m_beg from the current time and then displaying the result in minutes. The console is cleared with system("cls") before displaying the time, providing a clean output every time the method is called.
+
+`stop()` This method returns the elapsed time in minutes since the stopwatch was last started (or created if start() hasn't been called).
+
+<h3>Project Structure Description</h3>
+
+This project is divided into three files to maintain a modular structure:
+
+`lab2.21.cpp` → Contains the main() function.
+
+`lab21.h` → The header file that declares function prototypes.
+
+`Source.cpp` → Implements all the functions declared in the header.
