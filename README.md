@@ -222,3 +222,41 @@ This project is divided into three files to maintain a modular structure:
 `paralelepiped2_class.h` → The header file that declares function prototypes.
 
 `Source.cpp` → Implements all the functions declared in the header.
+____
+#Lab2.15
+
+`lab2.15` defines a `class quadrangle` that represents a geometric quadrilateral. The class includes methods to calculate and display the perimeter and area of the quadrangle. Let's break down the code:
+
+<h3>Class Definition</h3>
+
+Member Variables:
+`m_a`, `m_b`, `m_c`, `m_d`: These are the four sides of the quadrangle.
+
+Constructors:
+
+The default constructor initializes an empty quadrangle (no sides set).
+
+The parameterized constructor initializes a quadrangle with given side lengths a, b, c, and d.
+
+Methods:
+
+`setAll(double a, double b, double c, double d)` This method sets the four sides of the quadrangle.
+
+`perimeter()` This method calculates and outputs the perimeter of the quadrangle. It calls the helper method getPerimeter() to do the actual calculation.
+
+`getPerimeter()` This method calculates the perimeter by adding up the lengths of all four sides.
+
+`Area()` This method calculates and outputs the area of the quadrangle. It calls the helper method getArea() for the calculation.
+
+`getArea()` This method uses Brahmagupta's formula for the area of a cyclic quadrilateral (a quadrangle that can be inscribed in a circle). It first calculates the semi-perimeter (s) and then uses it to calculate the area (S).
+
+<h3>Project Structure Description</h3>
+
+This project is divided into three files to maintain a modular structure:
+
+`lab2.15.cpp` → Contains the main() function.
+
+`quadrangle.h` → The header file that declares function prototypes.
+
+`Source.cpp` → Implements all the functions declared in the header.
+_____
