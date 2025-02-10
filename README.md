@@ -293,3 +293,37 @@ This project is divided into three files to maintain a modular structure:
 `lab21.h` → The header file that declares function prototypes.
 
 `Source.cpp` → Implements all the functions declared in the header.
+_____
+# lab4.4
+
+`lab4.4` defines two classes, Matrix and Matrix1, to work with matrices dynamically. It includes memory allocation, operator overloading, sorting, and array operations. 
+
+### **Matrix Class**
+- Creating a 2D array (dynamic allocation)
+- Initializing it with random values
+- Printing the matrix
+- Overloading the + operator for matrix addition
+  
+### **Matrix1 Class**
+- Works with the `Matrix` class.
+- Stores the maximum value from each row of a matrix.
+- Provides functionality for sorting rows based on their maximum values.
+
+### **Features**
+- **Matrix Addition**: Two matrices can be added element-wise using overloaded `+` operator.
+- **Row Maximum Calculation**: The `Matrix1` class calculates and stores the maximum element of each row from a given matrix.
+- **Sorting**: Rows are sorted based on the maximum element of each row.
+- **Memory Management**: The program ensures proper memory allocation and deallocation to prevent memory leaks.
+
+### **Main Function**
+- Creates two matrices, performs matrix addition, and sorts matrix rows based on maximum elements. It prints the results for the user to see.
+
+<h3>Project Structure Description</h3>
+
+This project is divided into three files to maintain a modular structure:
+
+`lab4.4.cpp` → Contains the main() function.
+
+`lab4.h` → The header file that declares function prototypes.
+
+`Source.cpp` → Implements all the functions declared in the header.
