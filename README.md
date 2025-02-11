@@ -44,27 +44,20 @@ This project is divided into three files to maintain a modular structure:
 ______
 # Lab1.3
 
-`Lab1.3` involves a C++ `class sentence` that is used to manipulate strings based on certain conditions. 
+The *lab1.3* program defines a class `sentence` for manipulating strings, focusing on **tokenization, word filtering, and character swapping**.  
 
-The class contains methods to:
+### **Functionality**  
+- **Tokenizes** a string into words based on delimiters.  
+- **Identifies twin words** (words with an even length).  
+- **Swaps** the first and last characters of each word.  
 
-- Tokenize a string into words using specified delimiters.
-- Find twin words (words with an even length).
-- Swap characters in the words (swap the first and last character).
+### **Key Features**  
+- **Uses a vector** to store and manage words efficiently.  
+- **Customizable delimiters** allow flexible tokenization.  
+- **Filtering mechanism** isolates words with even lengths.  
+- **Character swapping** modifies word structures dynamically.  
 
-<h3>Class Definition</h3>
-
-The `sentence class` has a vector of strings called main, which stores the words from a given input string. The class has the following methods:
-
-Constructor `sentence()`: Initializes an empty sentence object.
-
-Parameterized Constructor `sentence(string s, string symb, string ano_symb)`: Takes an input string and two delimiter strings. It tokenizes the input string by removing occurrences of a specified symbol (ano_symb) and splitting the string based on the other symbol (symb).
-
-`print()`: Prints all the words stored in the main vector.
-
-`twin()`: Returns a vector of strings containing only the words with an even number of characters.
-
-`swap()`: Swaps the first and last character of each word stored in main and returns the modified vector of words.
+This class is useful for **text processing, data parsing, and natural language preprocessing tasks.**
 
 <h3>Project Structure Description</h3>
 
@@ -78,31 +71,23 @@ This project is divided into three files to maintain a modular structure:
 ______
 # Lab1.4
 
-`lab1.4` manages a list of products in a shop, allowing users to input product details, print the information, and sort the products alphabetically by name. 
+**Shop Product Management – lab1.4**  
 
-The program uses a structure (`storage`) to store product information and provides functions for input, output, and sorting.
+The *lab1.4* program manages a **list of products** in a shop, enabling users to **input, display, and sort** product information. It uses a **structure (`storage`)** to store details and provides basic operations for handling product data.  
 
-<h3>storage Structure</h3>
+### **Functionality**  
+- **Stores product details** such as name, type, quantity, and cost.  
+- **Accepts user input** to populate product information.  
+- **Displays product details** in a structured format.  
+- **Sorts products alphabetically** in descending order.  
 
-The skald structure holds information about a product, including:
+### **Key Features**  
+- **Simple Data Management:** Uses a structure to store product information.  
+- **Alphabetical Sorting:** Organizes products for easy lookup.  
+- **User Interaction:** Allows manual entry and display of products.  
+- **Structured Output:** Ensures clear and readable product listings.  
 
-- name: The name of the product.
-
-- type: The type/category of the product.
-
-- quantity: The quantity of the product in stock.
-
-- cost: The cost of the product.
-
-It also includes the following member functions:
-
-`input()`: Prompts the user to input the product details and stores them in the respective fields of the skald structure.
-
-`print()`: Prints the details of the product in a formatted way.
-
-`set_get()`: Function is used to input and print the information for all products in the shop.
-
-`sort()`: Sorts the products in the shop array based on their names in descending order (alphabetically).
+This program is useful for **basic inventory management systems, small shop databases, and product listing applications.**
 
 <h3>Project Structure Description</h3>
 
@@ -116,30 +101,21 @@ This project is divided into three files to maintain a modular structure:
 ____
 # Lab2.11
 
-`lab2.11` defines a `Product class` that represents a food product with attributes such as name, weight, energy value, and macronutrient content. The class provides functionalities to initialize, modify, display, and sum up the energy values of multiple products.
+The `Product` class in *lab2.11* represents a food item with attributes related to its **weight, energy value, and macronutrient composition** (proteins, fats, and carbohydrates).  
 
-<h3>Class Structure</h3>
+### **Functionality**  
+- **Stores product details**, including name and nutritional information.  
+- **Supports initialization and modification** of product attributes.  
+- **Displays product information** in a structured format.  
+- **Calculates total energy value** for multiple products.  
 
-Attributes:
+### **Key Features**  
+- **Nutritional Tracking:** Stores macronutrient content per 100g.  
+- **Energy Calculation:** Allows summing up calorie values for multiple items.  
+- **Structured Output:** Provides a clear and formatted way to display data.  
+- **Flexible Initialization:** Supports both default and parameterized setups.  
 
-- m_name: Product name.
-- m_weight: Weight of the product.
-- m_energy: Energy content (calories).
-- m_bilok: Protein content per 100g.
-- m_jyry: Fat content per 100g.
-- m_wuglewody: Carbohydrate content per 100g.
-  
-Methods:
-
-`Product()`; → Default constructor.
-
-`Product(...)` → Parameterized constructor.
-
-`setAll(...)` → Sets all attributes.
-
-`print()`; → Displays product details.
-
-`energy_summar(Product* a, int n)`; → Computes the sum of energy values for an array of Product objects.
+This class is useful for applications related to **food databases, dietary tracking, and nutrition analysis.**
 
 <h3>Project Structure Description</h3>
 
@@ -153,27 +129,20 @@ This project is divided into three files to maintain a modular structure:
 ______
 # Lab2.12
 
-`lab2.12` defines a `Person class` that models a person’s basic details such as name, profession, address, age, and phone number.
+The `Person` class in *lab2.12* represents a person's basic details, including their name, profession, address, age, and phone number.  
 
-<h3>Class Structure</h3>
+### **Functionality**  
+- Stores and manages **personal details** such as name, profession, and contact information.  
+- Provides methods to **set and retrieve** this information.  
+- Allows formatted output for easy readability.  
 
-Private Data Members:
+### **Key Features**  
+- **Encapsulation:** Private attributes ensure data integrity.  
+- **Comprehensive Representation:** Includes multiple attributes to describe a person.  
+- **Formatted Display:** Outputs details in a structured format.  
+- **Flexibility:** Supports default and parameterized initialization.  
 
-- m_lastName → Stores the person’s last name.
-- m_profession → Stores their profession.
-- m_address → Stores their address.
-- m_phone → Stores their phone number (as a string to preserve leading zeros).
-- m_age → Stores their age.
-
-Public Member Functions:
-
-`Person()` → Default constructor initializes attributes with default values.
-
-`Person(string lastName, string profession, string address, int age, string phone)` → Parameterized constructor to initialize all attributes.
-
-`void setAll(string lastName, string profession, string address, int age, string phone)` → Setter function to assign values.
-
-`void print() const` → Prints the person's information in a formatted table.
+This class serves as a foundational model for managing and displaying personal information efficiently.
 
 <h3>Project Structure Description</h3>
 
@@ -187,31 +156,21 @@ This project is divided into three files to maintain a modular structure:
 _____
 # Lab2.14
 
-`lab2.14` defines a `paralelepiped class`, which represents a rectangular parallelepiped (a 3D box with six rectangular faces). It calculates:
+The `paralelepiped` class in *lab2.14* models a rectangular parallelepiped (a 3D box with six rectangular faces) and provides methods for surface area calculations.  
 
-Side surface area (Sb) → Sum of the areas of the four lateral faces.
+### **Functionality**  
+- Represents a 3D shape with three dimensions (length, width, height).  
+- Computes the **side surface area** (sum of four lateral faces).  
+- Computes the **total surface area** (sum of all six faces).  
+- Allows dimensions to be set or modified dynamically.  
 
-Total surface area (Spp) → Sum of the areas of all six faces.
+### **Key Features**  
+- **Dimensional Representation:** Stores three key measurements of the shape.  
+- **Side Surface Area Calculation:** Determines the area of the vertical faces.  
+- **Total Surface Area Calculation:** Includes both lateral and top-bottom face contributions.  
+- **Encapsulation:** Private attributes ensure controlled access and modification.  
 
-<h3>Class Structure</h3> 
-
-Private attributes: `m_a`, `m_b`, `m_c` → The three dimensions of the parallelepiped.
-
-Public methods:
-
-`paralelepiped()` → Default constructor.
-
-`paralelepiped(int a, int b, int c)` → Parameterized constructor.
-
-`void setAll(int a, int b, int c)` → Sets all dimensions.
-
-`void Sb()` → Prints the side surface area.
-
-`int getSb()` → Calculates the side surface area.
-
-`void Spp()` → Prints the total surface area.
-
-`int getSpp()` → Calculates the total surface area.
+This class provides a structured approach to working with rectangular parallelepipeds, enabling accurate surface area calculations.
 
 <h3>Project Structure Description</h3>
 
@@ -225,30 +184,21 @@ This project is divided into three files to maintain a modular structure:
 ____
 #Lab2.15
 
-`lab2.15` defines a `class quadrangle` that represents a geometric quadrilateral. The class includes methods to calculate and display the perimeter and area of the quadrangle. Let's break down the code:
+The `quadrangle` class in *lab2.15* represents a geometric quadrilateral and provides methods to compute its perimeter and area.  
 
-<h3>Class Definition</h3>
+### **Functionality**  
+- Stores the lengths of four sides of a quadrilateral.  
+- Calculates and displays the perimeter by summing all sides.  
+- Computes the area using Brahmagupta’s formula for cyclic quadrilaterals.  
+- Allows updating of side lengths dynamically.  
 
-Member Variables:
-`m_a`, `m_b`, `m_c`, `m_d`: These are the four sides of the quadrangle.
+### **Key Features**  
+- **Side Length Management:** Supports initialization and modification of four sides.  
+- **Perimeter Calculation:** Computes the total boundary length.  
+- **Area Calculation:** Uses a mathematical formula for precise results.  
+- **Structured Approach:** Separates calculations into helper methods for clarity and reusability.  
 
-Constructors:
-
-The default constructor initializes an empty quadrangle (no sides set).
-
-The parameterized constructor initializes a quadrangle with given side lengths a, b, c, and d.
-
-Methods:
-
-`setAll(double a, double b, double c, double d)` This method sets the four sides of the quadrangle.
-
-`perimeter()` This method calculates and outputs the perimeter of the quadrangle. It calls the helper method getPerimeter() to do the actual calculation.
-
-`getPerimeter()` This method calculates the perimeter by adding up the lengths of all four sides.
-
-`Area()` This method calculates and outputs the area of the quadrangle. It calls the helper method getArea() for the calculation.
-
-`getArea()` This method uses Brahmagupta's formula for the area of a cyclic quadrilateral (a quadrangle that can be inscribed in a circle). It first calculates the semi-perimeter (s) and then uses it to calculate the area (S).
+This class provides an efficient way to represent and work with quadrilaterals in geometric computations.
 
 <h3>Project Structure Description</h3>
 
@@ -262,28 +212,21 @@ This project is divided into three files to maintain a modular structure:
 _____
 #Lab2.21
 
-`lab2.21` defines a `Stopwatch class` that is used to measure elapsed time in seconds (with minute-level precision). It utilizes the C++ chrono library for high-resolution time measurement.
+The `Stopwatch` class in *lab2.21* is designed to measure elapsed time with minute-level precision. It leverages the C++ `chrono` library for high-resolution time tracking.  
 
-<h3>Class Definition</h3>
+### **Functionality**  
+- Tracks the start time of an event.  
+- Measures elapsed time in minutes using a high-precision clock.  
+- Can be reset and restarted at any moment.  
+- Displays elapsed time in a clean format.  
 
-Member Variables:
+### **Key Features**  
+- **High-Precision Timing:** Uses `std::chrono::high_resolution_clock` for accurate time measurement.  
+- **Flexible Duration Handling:** Stores time in minutes using `std::chrono::duration<double, std::ratio<60>>`.  
+- **Dynamic Time Tracking:** Can be started, stopped, and restarted.  
+- **Clean Console Output:** Clears the screen before displaying updated elapsed time.  
 
-`m_beg`: A time point representing the moment when the stopwatch was started. This variable is of type std::chrono::time_point, which records the current time when the stopwatch is started or reset.
-
-`clock_t`: This alias refers to std::chrono::high_resolution_clock, which is used for high-precision timing.
-
-`second_t`: This alias represents the duration of time in minutes. The std::chrono::duration is parameterized with double and a ratio of 60, so the time is recorded in minutes. 
-
-Methods:
-
-`Stopwatch()` The default constructor initializes the stopwatch by setting m_beg to the current time point when the object is created.
-
-`start()` This method resets the stopwatch by updating m_beg to the current time again. This allows the stopwatch to be started or restarted.
-
-`show()` This method calculates and displays the elapsed time in minutes (since second_t is using std::ratio<60>). It does this by subtracting m_beg from the current time and then displaying the result in minutes. The console is cleared with system("cls") before displaying the time, providing a clean output every time the method is called.
-
-`stop()` This method returns the elapsed time in minutes since the stopwatch was last started (or created if start() hasn't been called).
-
+This class provides a structured and efficient way to measure elapsed time with an easy-to-use interface.
 <h3>Project Structure Description</h3>
 
 This project is divided into three files to maintain a modular structure:
@@ -296,7 +239,7 @@ This project is divided into three files to maintain a modular structure:
 _____
 # lab4.4
 
-`lab4.4` defines two classes, Matrix and Matrix1, to work with matrices dynamically. It includes memory allocation, operator overloading, sorting, and array operations. 
+*lab4.4* defines two classes, Matrix and Matrix1, to work with matrices dynamically. It includes memory allocation, operator overloading, sorting, and array operations. 
 
 ### **Matrix Class**
 - Creating a 2D array (dynamic allocation)
@@ -330,7 +273,7 @@ This project is divided into three files to maintain a modular structure:
 _____
 # Lab5.1
 
-`lab5.1` implements the `spot`, `circle`, and `ellipse` classes to model geometric shapes using coordinate points.
+*lab5.1* implements the `spot`, `circle`, and `ellipse` classes to model geometric shapes using coordinate points.
 
 ### **Functionality Overview**
 1. **`spot` Class (Represents a 2D Point)**
