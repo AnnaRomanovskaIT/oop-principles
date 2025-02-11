@@ -311,3 +311,27 @@ This project is divided into three files to maintain a modular structure:
 `lab5.1.h` → The header file that declares function prototypes.
 
 `Source.cpp` → Implements all the functions declared in the header.
+_____
+# Lab5.2 – Vehicle Classes
+
+This program defines classes related to vehicles: `wheel`, `car`, and `truck`. The `wheel` class is used as a base class for the `car` class, and `truck` is another class that holds information about trucks.
+
+### **Key Features**
+
+- **wheel Class**:  
+  - Represents a wheel with an integer radius.
+  - Provides a method to retrieve the wheel's radius (`getR`).
+
+- **car Class**:  
+  - Inherits from the `wheel` class and contains additional attributes: `m_mark` (car brand) and `m_price` (car price).
+  - Provides methods to retrieve the car's brand (`getMark`), price (`getPrice`), and prints a description of the car with its wheel radius and price.
+
+- **truck Class**:  
+  - Contains a carrying capacity (`m_carrying_capacity`).
+  - The `print` method provides information about the truck, including the associated car's mark, wheel radius, and the truck's carrying capacity.
+
+### **Main Functions**  
+- **Car Printing**: Describes a car by printing the car's brand, wheel radius, and price.
+- **Truck Printing**: Describes a truck by printing the associated car's brand, wheel radius, carrying capacity, and price.
+
+This program allows defining vehicles with specific attributes and relationships between **cars** and **wheels** while also providing functionality to print their details.
