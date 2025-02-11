@@ -327,3 +327,46 @@ This project is divided into three files to maintain a modular structure:
 `lab4.h` → The header file that declares function prototypes.
 
 `Source.cpp` → Implements all the functions declared in the header.
+_____
+# Lab5.1
+
+`lab5.1` implements the `spot`, `circle`, and `ellipse` classes to model geometric shapes using coordinate points.
+
+### **Functionality Overview**
+1. **`spot` Class (Represents a 2D Point)**
+   - Stores `x` and `y` coordinates.
+   - Provides methods to access (`getX()`, `getY()`) and print (`print()`) coordinates.
+   - Includes default and parameterized constructors.
+   - Has a destructor for proper cleanup.
+
+2. **`circle` Class (Represents a Circle)**
+   - Uses two `spot` objects: one as the center and another to define the radius.
+   - Computes the area using the formula:  
+     \[
+     \text{area} = \pi \times r^2
+     \]
+   - Prints the computed area.
+   - Implements a destructor.
+
+3. **`ellipse` Class (Represents an Ellipse)**
+   - Uses three `spot` objects: one as the center and two others to determine the ellipse’s axes.
+   - Computes an approximation of the area using distances from the center.
+   - Prints the computed area.
+   - Implements a destructor.
+
+### **Key Features**
+- **Object-Oriented Design**: Uses encapsulation and inheritance to organize geometric shapes.
+- **Mathematical Calculations**: Implements basic distance formulas to determine shape dimensions.
+- **Dynamic Memory Management**: Ensures proper resource handling with constructors and destructors.
+
+This setup provides a structured way to work with geometric figures in a 2D coordinate system while allowing for easy extensions and modifications.
+
+<h3>Project Structure Description</h3>
+
+This project is divided into three files to maintain a modular structure:
+
+`lab5.1.cpp` → Contains the main() function.
+
+`lab5.1.h` → The header file that declares function prototypes.
+
+`Source.cpp` → Implements all the functions declared in the header.
