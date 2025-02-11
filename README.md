@@ -180,7 +180,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 ____
-#Lab2.15
+# Lab2.15
 
 The `quadrangle` class in *lab2.15* represents a geometric quadrilateral and provides methods to compute its perimeter and area.  
 
@@ -208,7 +208,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 _____
-#Lab2.21
+# Lab2.21
 
 The `Stopwatch` class in *lab2.21* is designed to measure elapsed time with minute-level precision. It leverages the C++ `chrono` library for high-resolution time tracking.  
 
