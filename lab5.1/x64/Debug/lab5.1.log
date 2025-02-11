@@ -1,0 +1,9 @@
+﻿  lab5.1.cpp
+  Source.cpp
+D:\c++\lab oop\lab5.1\Source.cpp(8,15): error C2084: function 'spot::~spot(void)' already has a body
+D:\c++\lab oop\lab5.1\lab5.1.h(14): message : see previous definition of '{dtor}'
+D:\c++\lab oop\lab5.1\Source.cpp(15,19): error C2084: function 'circle::~circle(void)' already has a body
+D:\c++\lab oop\lab5.1\lab5.1.h(24): message : see previous definition of '{dtor}'
+D:\c++\lab oop\lab5.1\Source.cpp(30,21): error C2084: function 'ellipse::~ellipse(void)' already has a body
+D:\c++\lab oop\lab5.1\lab5.1.h(35): message : see previous definition of '{dtor}'
+  Generating Code...
