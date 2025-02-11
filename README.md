@@ -2,7 +2,7 @@
 A study repository for Object-Oriented Programming (OOP) principles in C++ covering encapsulation, inheritance, polymorphism, and abstraction with practical examples
 ____
 # Lab1.1:
-`Lab1.1` consists of multiple functions performing different operations on an array. 
+*Lab1.1* consists of multiple functions performing different operations on an array. 
 
 It includes:
 
@@ -24,7 +24,7 @@ This project is divided into three files to maintain a modular structure:
 _____
 # Lab1.2
 
-`lab1.2` working with a dynamically allocated 2D array (matrix). 
+*lab1.2* working with a dynamically allocated 2D array (matrix). 
 
 The main operations include:
 
@@ -70,8 +70,6 @@ This project is divided into three files to maintain a modular structure:
 `Source.cpp` → Implements all the functions declared in the header.
 ______
 # Lab1.4
-
-**Shop Product Management – lab1.4**  
 
 The *lab1.4* program manages a **list of products** in a shop, enabling users to **input, display, and sort** product information. It uses a **structure (`storage`)** to store details and provides basic operations for handling product data.  
 
