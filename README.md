@@ -1,7 +1,7 @@
 # oop-principles
 A study repository for Object-Oriented Programming (OOP) principles in C++ covering encapsulation, inheritance, polymorphism, and abstraction with practical examples
 ____
-# Lab1.1:
+# Array Operations
 *Lab1.1* consists of multiple functions performing different operations on an array. 
 
 It includes:
@@ -22,7 +22,7 @@ This project is divided into three files to maintain a modular structure:
 
 `func1.1.cpp` → Implements all the functions declared in the header.
 _____
-# Lab1.2
+# Matrix Operations
 
 *lab1.2* working with a dynamically allocated 2D array (matrix). 
 
@@ -42,7 +42,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 ______
-# Lab1.3
+# String Manipulation
 
 The *lab1.3* program defines a class `sentence` for manipulating strings, focusing on **tokenization, word filtering, and character swapping**.  
 
@@ -69,7 +69,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 ______
-# Lab1.4
+# Shop Structure
 
 The *lab1.4* program manages a **list of products** in a shop, enabling users to **input, display, and sort** product information. It uses a **structure (`storage`)** to store details and provides basic operations for handling product data.  
 
@@ -97,7 +97,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 ____
-# Lab2.11
+# Product Class
 
 The `Product` class in *lab2.11* represents a food item with attributes related to its **weight, energy value, and macronutrient composition** (proteins, fats, and carbohydrates).  
 
@@ -125,7 +125,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 ______
-# Lab2.12
+# Person Class
 
 The `Person` class in *lab2.12* represents a person's basic details, including their name, profession, address, age, and phone number.  
 
@@ -152,7 +152,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 _____
-# Lab2.14
+# Parallelepiped Class
 
 The `paralelepiped` class in *lab2.14* models a rectangular parallelepiped (a 3D box with six rectangular faces) and provides methods for surface area calculations.  
 
@@ -180,7 +180,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 ____
-# Lab2.15
+# Quadrangle class
 
 The `quadrangle` class in *lab2.15* represents a geometric quadrilateral and provides methods to compute its perimeter and area.  
 
@@ -208,7 +208,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 _____
-# Lab2.21
+# Stopwatch Class
 
 The `Stopwatch` class in *lab2.21* is designed to measure elapsed time with minute-level precision. It leverages the C++ `chrono` library for high-resolution time tracking.  
 
@@ -235,7 +235,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 _____
-# lab4.4
+# Dual Matrix Operations and Sorting
 
 *lab4.4* defines two classes, Matrix and Matrix1, to work with matrices dynamically. It includes memory allocation, operator overloading, sorting, and array operations. 
 
@@ -269,7 +269,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 _____
-# Lab5.1
+# Spot-Based Circle and Ellipse Computation
 
 *lab5.1* implements the `spot`, `circle`, and `ellipse` classes to model geometric shapes using coordinate points.
 
@@ -312,7 +312,7 @@ This project is divided into three files to maintain a modular structure:
 
 `Source.cpp` → Implements all the functions declared in the header.
 _____
-# Lab5.2 – Vehicle Classes
+# Automotive Hierarchy: Cars, Trucks, and Their Wheels
 
 This program defines classes related to vehicles: `wheel`, `car`, and `truck`. The `wheel` class is used as a base class for the `car` class, and `truck` is another class that holds information about trucks.
 
