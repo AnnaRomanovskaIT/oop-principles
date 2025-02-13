@@ -335,3 +335,27 @@ This program defines classes related to vehicles: `wheel`, `car`, and `truck`. T
 - **Truck Printing**: Describes a truck by printing the associated car's brand, wheel radius, carrying capacity, and price.
 
 This program allows defining vehicles with specific attributes and relationships between **cars** and **wheels** while also providing functionality to print their details.
+____
+# Human List, Stack, and Queue Operations
+
+`Lab5.3` defines a set of classes representing **human data storage and manipulation** through **stack (LIFO)** and **queue (FIFO)** structures. It allows for adding, displaying, filtering, and swapping elements based on age or position.
+
+### Key Features:
+- **Base Class `List`**: Represents a person (human) with attributes:  
+  - `name` → First name of the person.  
+  - `last_name` → Last name of the person.  
+  - `age` → Age of the person.
+
+- **Class `Steck` (Stack)**: Inherits from `List`. Implements a **stack-like behavior** (Last-In-First-Out) using `vector<human>`.  
+  - **Add person to stack**.
+  - **Remove person from stack**.
+  - **Display all persons**.
+  - **Filter and display persons below a certain age**.
+
+- **Class `Line` (Queue)**: Inherits from `List`. Implements a **queue-like behavior** (First-In-First-Out) using `vector<human>`.  
+  - **Add person to queue**.
+  - **Display all persons**.
+  - **Filter and display persons below a certain age**.
+  - **Swap two persons by index**.
+
+The program models fundamental **data structures** concepts (stack and queue) with **custom data (human)** objects.
