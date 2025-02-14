@@ -359,3 +359,35 @@ ____
   - **Swap two persons by index**.
 
 The program models fundamental **data structures** concepts (stack and queue) with **custom data (human)** objects.
+_______
+# Operating System and Windows Class with Operator Overloading
+
+*Lab5.4* demonstrates **inheritance** and **operator overloading** in C++ through a base class `o_system` and a derived class `Windows`. The classes represent an operating system and a specific type of operating system, with functionality to input and output their details using overloaded stream operators.
+
+### Key Features:
+#### **Class `o_system`** (Base Class):
+Represents a generic operating system with attributes:
+- `yadro` → Core of the operating system.
+- `interface` → User interface description.
+- `draivers` → Drivers description.
+
+**Member Functions:**
+- **Default constructor** → Initializes with default values.
+- **Parameterized constructor** → Initializes with user-specified values.
+- **Copy constructor** → Initializes using another `o_system` object.
+- **Destructor** → Virtual destructor.
+- **Overloaded `<<` operator** → Outputs the system's details.
+- **Overloaded `>>` operator** → Inputs system details from the user.
+
+#### **Class `Windows`** (Derived Class):
+Inherits from `o_system` and represents a specific type of operating system with additional attributes for types of `yadro`, `interface`, and `draivers`.
+
+**Member Functions:**
+- **Default constructor** → Initializes with default values.
+- **Parameterized constructor** → Initializes with user-specified values.
+- **Copy constructor** → Initializes using another `Windows` object.
+- **Destructor** → Virtual destructor.
+- **Overloaded `<<` operator** → Outputs the system's details, including both base and derived class attributes.
+- **Overloaded `>>` operator** → Inputs derived class details from the user.
+
+This lab focuses on **demonstrating inheritance**, **copy constructors**, **destructors**, and **overloading input/output operators** for **custom classes**.
