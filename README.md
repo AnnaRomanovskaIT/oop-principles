@@ -391,3 +391,32 @@ Inherits from `o_system` and represents a specific type of operating system with
 - **Overloaded `>>` operator** → Inputs derived class details from the user.
 
 This lab focuses on **demonstrating inheritance**, **copy constructors**, **destructors**, and **overloading input/output operators** for **custom classes**.
+_____
+# Template Based Array
+
+*lab 6* demonstrates the use of templates to create a generic array class (`Array<T>`), which can hold different types of data (such as `int` and `double`) and perform various operations on the array. The program allows you to:
+1. **Create arrays** of integers or doubles with random values between -10 and 10.
+2. **Print the array** values.
+3. **Find the maximum element** of the array.
+4. **Sum the elements up to the last positive element** in the array.
+5. **Modify the array** by setting elements to zero that fall within a specific absolute value range `[a, b]`.
+6. **Rearrange** the array such that zero values are placed at the end.
+
+### Key Features
+- **Template-based Class**: The class `Array<T>` uses C++ templates to create arrays of any data type (`T`). This allows the same class to handle both integer and floating-point arrays, and potentially other types.
+- **Random Array Initialization**: The array is populated with random values within a specified range (`rand() % 20 - 10`).
+- **Max Element Calculation**: The `max_el()` function calculates the maximum value in the array.
+- **Sum Calculation**: The `sum_el()` function calculates the sum of elements from the start of the array to the last positive value.
+- **Array Modification**: The `new_a()` function modifies the array by setting elements to zero that are within a specified absolute value range, then rearranges the array to move these zero values to the end.
+
+### Project Structure
+The project is structured across multiple files to organize the code and ensure proper compilation of template-based classes. The files are as follows:
+
+- **Header File (`lab6.h`)**: Contains the class declaration and method prototypes.
+- **Implementation Files (`lab6.2.cpp`)**: Contains the method definitions for the class.
+- **Main File (`lab6.1.cpp`)**: Uses the class to demonstrate its functionality (input/output, calculations).
+- **Template Instantiation (`templates.cpp`)**: Ensures proper code generation for `int` and `double` types.
+
+This structure keeps the project modular and ensures that all parts are properly linked and compiled, especially with the use of template classes.
+
+The `main()` function demonstrates these features, where the user can input values for modifying the array. The program also shows how to use templates to create arrays with different data types.
